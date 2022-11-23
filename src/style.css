@@ -1,0 +1,40 @@
+:root {
+  --main-bg: #100f0f;
+  --primary-bg: #252323;
+  --main-text: #155253;
+  --highlight-color: #e2dcc8;
+  --hover: #f1f1f1;
+}
+
+.navbar {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+}
+
+.navbar-nav {
+  color: var(--main-text);
+  margin-right: 4rem;
+}
+
+.nav-link {
+  color: var(--main-text);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.home {
+  background-color: var(--main-bg);
+  height: 100vh;
+  align-content: center;
+  margin: auto;
+  padding: 5rem;
+}
+
+.my-photo img {
+  width: 25rem;
+}
+
+.home-content {
+  margin: auto;
+  color: var(--main-text);
+}
