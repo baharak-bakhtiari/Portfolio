@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>baharak Bakhtiari</title>
-    <meta name="description" content="baharak Bakhtiari portfolio">
+    <meta name="description" content="baharak Bakhtiari portfolio" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,101 +20,49 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Baharak Bakhtiari</a>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/images/b-logo.png" alt="my logo" width="80rem" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact me</a>
-            </li>
-          </ul>
+        <div
+          class="collapse navbar-collapse position-absolute end-0"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#">Certificates</a>
+            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
-
-    <h2 class="text-center">👋 Hi I am</h2>
-    <h1 class="text-center">Baharak Bakhtiari</h1>
-    <h3 class="text-center">Front-end developer, based in Germany</h3>
-    <div class="navigation-links mb-5">
-      <a href="about.html#contact" class="primary-link">Contact me</a>
-      <a href="about.html" class="secondary-link">About me</a>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/coffee.jpg" class="img-fluid rounded" />
+    <div class="row">
+      <div class="col-6 home-content">
+        <h1>Hi, I'm Baharak Bakhtiari.</h1>
+        <h2>I'm a <span>front-end</span> web developer.</h2>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nulla
+          unde ut aliquam impedit officiis culpa voluptates corporis accusantium
+          possimus.
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-3">coffeeShop app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mt-5">
-            <a href="#" class="primary-link">Launch coffeeShop App</a>
-          </div>
-        </div>
+        <button>contact me</button>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h2 class="mb-3">Weather app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mb-5 mt-5">
-            <a href="#" class="primary-link">Launch Weather App</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img src="images/weather.jpg" class="img-fluid rounded" />
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <img
-            src="images/resturant.jpg"
-            class="img-fluid rounded"
-            alt="project"
-          />
-        </div>
-        <div class="col-md-6">
-          <h2 class="mb-3">Chinese Resturant app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mt-5">
-            <a href="#" class="primary-link">Chinese Resturant App</a>
-          </div>
-        </div>
+      <div class="col-6 my-photo">
+        <img src="/images/Baharak.jpg" alt="my-photo" width="300rem" />
       </div>
     </div>
   </body>
