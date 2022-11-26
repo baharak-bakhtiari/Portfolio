@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/images/b-logo.png" alt="my logo" width="80rem" />
+          <img src="/images/Logo.svg" alt="my logo" class="logo img-fluid" />
         </a>
         <button
           class="navbar-toggler"
@@ -50,24 +50,26 @@
         </div>
       </div>
     </nav>
-    <div class="home row">
-      <div class="col-6 home-content">
-        <h1>Hi, I'm Baharak Bakhtiari.</h1>
-        <h2>I'm a <span>front-end</span> web developer.</h2>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nulla
-          unde ut aliquam impedit officiis culpa voluptates corporis accusantium
-          possimus.
+    <section class="home-page">
+      <div class="home row">
+        <div class="col-6 home-content">
+          <h1>Hi, I'm Baharak Bakhtiari.</h1>
+          <h2>I'm a <span>front-end</span> web developer.</h2>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+            nulla unde ut aliquam impedit officiis culpa voluptates corporis
+            accusantium possimus.
+          </div>
+          <button>contact me</button>
         </div>
-        <button>contact me</button>
+        <div class="col-6 my-photo">
+          <img
+            class="img-fluid mx-auto d-block"
+            src="/images/Baharak.jpg"
+            alt="my-photo"
+          />
+        </div>
       </div>
-      <div class="col-6 my-photo">
-        <img
-          class="img-fluid mx-auto d-block"
-          src="/images/Baharak.jpg"
-          alt="my-photo"
-        />
-      </div>
-    </div>
+    </section>
   </body>
 </html>
