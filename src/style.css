@@ -1,18 +1,45 @@
 * {
   box-sizing: border-box;
+  transition: 0.2s linear;
+  font-family: "Zilla Slab", serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 :root {
-  --main-bg: #100f0f;
-  --primary-bg: #1a1818;
-  --main-text: #155253;
+  --main-bg: #1a1818;
+  --primary-bg: #e2dcc80c;
+  --main-text: #0f7274;
   --highlight-color: #e2dcc8;
-  --hover: #f1f1f1;
-  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --hover: #e2dcc8;
+  --border: 0.12rem solid #e2dcc8;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #e2dcc8;
+  border-radius: 5rem;
 }
 
 body {
   background-color: var(--main-bg);
+  color: var(--main-text);
 }
 
 .navbar {
@@ -36,9 +63,23 @@ body {
 
 .nav-link {
   color: var(--main-text);
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0 0.4rem;
+  transition: all 0.2s linear;
+}
+
+.nav-link:hover {
+  color: var(--hover);
+  border-bottom: 0.07rem solid var(--hover);
+  padding-bottom: 0.3rem;
+}
+
+#hamburger-menu {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--main-text);
 }
 
 .home-page {
@@ -61,4 +102,28 @@ body {
 .home-content {
   margin: auto;
   color: var(--main-text);
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    position: absolute;
+    right: -100%;
+    background: var(--highlight-color);
+    width: 100vw;
+    height: auto;
+    margin-right: 0;
+    margin-top: 2.5rem;
+  }
+
+  .navbar.active {
+    top: 0;
+  }
+
+  .nav-link {
+    color: var(--black);
+    background-color: var(--white);
+    display: block;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }
 }
