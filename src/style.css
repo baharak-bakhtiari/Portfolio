@@ -83,29 +83,60 @@ body {
 }
 
 .home-page {
-  background-color: var(--main-bg);
-  height: 100vh;
-  padding-top: 5rem;
-  gap: 0;
-}
-
-.my-photo {
   background-color: var(--primary-bg);
-  margin: 3.5rem 3.5rem 3.5rem 0;
-  padding: 5rem;
-}
-
-.my-photo img {
-  max-width: 520px;
-  
+  height: 33.25rem;
+  margin: 10rem 5rem;
 }
 
 .home-content {
   color: var(--main-text);
-  background-color: var(--primary-bg);
   align-content: center;
-  margin: 3.5rem 0 3.5rem 3.5rem;
-  padding: 5rem;
+  margin: auto;
+  padding: 2rem 0 2rem 2.5rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--highlight-color);
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+h2 span {
+  color: var(--main-text);
+}
+
+.description {
+  font-size: 1.2rem;
+  color: rgb(136, 128, 128);
+  margin-bottom: 1.35rem;
+}
+
+.home-content button {
+  background-color: var(--main-text);
+  color: var(--highlight-color);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+.my-photo {
+  margin: 3.5rem 3.5rem 3.5rem 0;
+  padding-right: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  height: fit-content;
+}
+
+.my-photo img {
+  max-width: 400px;
 }
 
 @media (max-width: 991px) {
