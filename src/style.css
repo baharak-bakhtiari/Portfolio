@@ -12,16 +12,17 @@
 :root {
   --main-bg: #1a1818;
   --primary-bg: #e2dcc80c;
-  --main-text: #0f7274;
-  --highlight-color: #e2dcc8;
+  --main-text: rgb(13, 105, 85);
+  --highlight-color: #eedda5;
   --hover: #e2dcc8;
-  --border: 0.12rem solid #e2dcc8;
+  --border: 0.12rem solid #eedda5;
 }
 
 html {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -33,7 +34,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #e2dcc8;
+  background: var(--highlight-color);
   border-radius: 5rem;
 }
 
@@ -41,6 +42,8 @@ body {
   background-color: var(--main-bg);
   color: var(--main-text);
 }
+
+/*navbar*/
 
 .navbar {
   background-color: var(--main-bg);
@@ -53,26 +56,26 @@ body {
 
 .navbar-nav {
   color: var(--main-text);
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .logo {
   width: 3rem;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .nav-link {
   color: var(--main-text);
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
   margin: 0 0.4rem;
   transition: all 0.2s linear;
 }
 
 .nav-link:hover {
-  color: var(--hover);
-  border-bottom: 0.07rem solid var(--hover);
+  color: var(--highlight-color);
+  border-bottom: 0.07rem solid var(--highlight-color);
   padding-bottom: 0.3rem;
 }
 
@@ -81,6 +84,8 @@ body {
   cursor: pointer;
   color: var(--main-text);
 }
+
+/*home page*/
 
 .home-page {
   background-color: var(--primary-bg);
@@ -92,29 +97,31 @@ body {
   color: var(--main-text);
   align-content: center;
   margin: auto;
-  padding: 2rem 0 2rem 2.5rem;
+  padding: 2rem 0;
+  max-width: 550px;
 }
 
-h1 {
+.home-content h1 {
   font-size: 1.6rem;
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-weight: 500;
 }
 
-h2 {
+.home-content h2 {
   font-size: 4rem;
   font-weight: 900;
   color: var(--highlight-color);
   line-height: 4rem;
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
-h2 span {
+.home-content h2 span {
   color: var(--main-text);
 }
 
-.description {
+.home-content .description {
   font-size: 1.2rem;
   color: rgb(136, 128, 128);
   margin-bottom: 1.35rem;
@@ -124,7 +131,14 @@ h2 span {
   background-color: var(--main-text);
   color: var(--highlight-color);
   padding: 0.5rem 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.home-content button:hover {
+  color: var(--main-text);
+  background-color: var(--highlight-color);
 }
 
 .my-photo {
@@ -139,7 +153,15 @@ h2 span {
   max-width: 400px;
 }
 
+/*work page*/
+
+/*Responsivness*/
+
 @media (max-width: 991px) {
+  html {
+    font-size: 95%;
+  }
+
   .navbar-nav {
     position: absolute;
     right: -100%;
@@ -160,5 +182,13 @@ h2 span {
     display: block;
     font-size: 1.3rem;
     margin-left: 2rem;
+  }
+
+  .home-page {
+    align-items: center;
+  }
+
+  .home-content {
+    text-align: center;
   }
 }

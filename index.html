@@ -33,10 +33,12 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <!--navbar-->
+
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/images/Logo.svg" alt="my logo" class="logo img-fluid" />
+          <img src="/images/bb-logo.png" alt="my logo" class="logo img-fluid" />
         </a>
         <button
           class="navbar-toggler"
@@ -62,12 +64,17 @@
             <a class="nav-link active" aria-current="page" href="#">About</a>
             <a class="nav-link" href="#">Skills</a>
             <a class="nav-link" href="#">Certificates</a>
-            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#">Projects</a>
             <a class="nav-link" href="#">Contact</a>
           </div>
         </div>
       </div>
     </nav>
+
+    <!--end of navbar-->
+
+    <!--home page-->
+
     <div class="home-page d-lg-flex flex-row justify-content-between">
       <div class="home-content">
         <h1>Baharak Bakhtiari</h1>
@@ -76,7 +83,7 @@
           websites <span>experience</span>
         </h2>
         <div class="description">
-          A professional & imaginative front-end developer from&nbspIran. <br />
+          A professional & imaginative front-end developer from&nbspIran.
           Loves to add clarity to complicated concepts.
         </div>
         <button class="rounded-pill">contact me</button>
@@ -89,5 +96,32 @@
         />
       </div>
     </div>
+
+    <!--end of homepage-->
+
+    <!--work page-->
+
+    <section class="work-page">
+      <h3 class="section-title">my&nbsp;<span>projects</span></h3>
+      <div class="projects-container">
+        <div class="projects-item">
+          <div class="project-image">
+            <img src="images/blog-1.jpeg" alt="blog-1" />
+          </div>
+          <p class="project-name">CoffeeShop Website</p>
+          <div class="project-technologies">
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button class="launch-project">launch project</button>
+        </div>
+      </div>
+    </section>
+
+    <!--end of work page-->
   </body>
 </html>
