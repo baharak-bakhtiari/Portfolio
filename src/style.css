@@ -90,14 +90,14 @@ body {
 .home-page {
   background-color: var(--primary-bg);
   height: 33.25rem;
-  margin: 10rem 5rem;
+  margin: 11rem 5rem 5rem;
 }
 
 .home-content {
   color: var(--main-text);
   align-content: center;
-  margin: auto;
-  padding: 2rem 0;
+  margin: auto 1rem;
+  padding: 2rem;
   max-width: 550px;
 }
 
@@ -142,8 +142,7 @@ body {
 }
 
 .my-photo {
-  margin: 3.5rem 3.5rem 3.5rem 0;
-  padding-right: 2.5rem;
+  margin: 3.5rem 3rem 3.5rem 0;
   display: flex;
   align-items: flex-start;
   height: fit-content;
@@ -154,6 +153,94 @@ body {
 }
 
 /*work page*/
+
+.section-title {
+  color: var(--highlight-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 3.5rem;
+}
+
+.section-title span {
+  color: var(--main-text);
+}
+
+.projects-container {
+  margin: 2.5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  background-color: transparent;
+}
+
+.project-item {
+  border: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.work-page .projects-container .project-item:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.work-page .projects-container .project-item .project-image {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.project-image img {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project-name {
+  color: var(--main-text);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  align-self: center;
+}
+
+.project-technologies {
+  margin-left: 0.5rem;
+  width: 30%;
+  align-self: center;
+}
+
+.project-technologies i {
+  color: var(--highlight-color);
+  font-size: 2rem;
+}
+
+.project-description {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.launch-project {
+  background-color: var(--highlight-color);
+  color: var(--main-text);
+  width: 10rem;
+  height: 2.2rem;
+  margin: 0.5rem 0.5rem 1.5rem;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease-in;
+  align-self: center;
+}
+
+.launch-project:hover {
+  background-color: var(--main-text);
+  color: var(--highlight-color);
+}
 
 /*Responsivness*/
 
@@ -186,9 +273,46 @@ body {
 
   .home-page {
     align-items: center;
+    max-height: 30rem;
   }
 
   .home-content {
     text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home-page {
+    align-items: center;
+    max-height: 25rem;
+  }
+
+  .home-content {
+    max-width: 25rem;
+  }
+
+  .home-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .home-content h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .home-content .description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
