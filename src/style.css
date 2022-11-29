@@ -242,6 +242,15 @@ body {
   color: var(--highlight-color);
 }
 
+footer {
+  text-align: center;
+  color: var(--highlight-color);
+}
+
+footer a {
+  color: var(--main-text);
+}
+
 /*Responsivness*/
 
 @media (max-width: 991px) {
