@@ -152,6 +152,26 @@ body {
   max-width: 400px;
 }
 
+/*home page*/
+
+.about-container {
+  background-color: var(--primary-bg);
+  margin: 0 5rem 5rem;
+  padding: 3rem 3rem 3rem 0;
+}
+
+.about-content {
+  color: var(--main-text);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.quote {
+  color: var(--highlight-color);
+}
+
+/*end of home page*/
+
 /*work page*/
 
 .section-title {
