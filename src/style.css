@@ -12,6 +12,7 @@
 :root {
   --main-bg: #1a1818;
   --primary-bg: #e2dcc80c;
+  --primary-bg-dark: #2c2c2a;
   --main-text: rgb(13, 105, 85);
   --highlight-color: #eedda5;
   --hover: #e2dcc8;
@@ -88,6 +89,10 @@ body {
 /*home page*/
 
 .home-page {
+  height: 100vh;
+}
+
+.home-container {
   background-color: var(--primary-bg);
   height: 33.25rem;
   margin: 11rem 5rem 5rem;
@@ -152,39 +157,85 @@ body {
   max-width: 400px;
 }
 
-/*home page*/
+/*end of home page*/
+/*about page*/
 
-.about-container {
-  background-color: var(--primary-bg);
-  margin: 0 5rem 5rem;
-  padding: 3rem 3rem 3rem 0;
+.about-me {
+  height: 90vh;
+  background-color: var(--hover);
+  padding: 3rem 5rem;
 }
 
-.about-content {
-  color: var(--main-text);
+.section-title {
+  color: var(--main-bg);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.section-title span {
+  color: var(--main-bg);
+}
+
+.about-gist {
+  color: var(--primary-bg-dark);
   font-size: 1.5rem;
+  width: 45%;
+  margin: 0 auto;
   text-align: center;
 }
 
+.about-container {
+  background-color: var(--primary-bg);
+  margin: 0;
+  padding: 3rem 0 0;
+  line-height: 2rem;
+}
+
+.about-picture img {
+  width: 30rem;
+}
+
+.about-content {
+  color: var(--primary-bg-dark);
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
 .quote {
+  color: var(--main-text);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.my-resume {
+  background-color: var(--main-text);
   color: var(--highlight-color);
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.my-projects {
+  background-color: var(--main-text);
+  color: var(--highlight-color);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 2rem 0 1rem 1rem;
+}
+
+.my-resume:hover,
+.my-projects:hover {
+  transform: scale(1.05);
 }
 
 /*end of home page*/
 
 /*work page*/
-
-.section-title {
-  color: var(--highlight-color);
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 3.5rem;
-}
-
-.section-title span {
-  color: var(--main-text);
-}
 
 .projects-container {
   margin: 2.5rem 5rem;
