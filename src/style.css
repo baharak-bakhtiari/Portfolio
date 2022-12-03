@@ -17,6 +17,7 @@
   --highlight-color: #eedda5;
   --hover: #e2dcc8;
   --border: 0.12rem solid #eedda5;
+  --border-gray: 0.12rem solid #2c2c2a;
 }
 
 html {
@@ -237,6 +238,11 @@ body {
 
 /*work page*/
 
+.work-page {
+  background-color: var(--hover);
+  height: 100vh;
+}
+
 .projects-container {
   margin: 2.5rem 5rem;
   display: grid;
@@ -247,7 +253,7 @@ body {
 }
 
 .project-item {
-  border: var(--border);
+  border: var(--border-gray);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -273,8 +279,8 @@ body {
 .project-name {
   color: var(--main-text);
   margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-left: 0.5rem;
   align-self: center;
 }
@@ -286,18 +292,19 @@ body {
 }
 
 .project-technologies i {
-  color: var(--highlight-color);
+  color: var(--primary-bg-dark);
   font-size: 2rem;
 }
 
 .project-description {
   margin: 0.5rem;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .launch-project {
-  background-color: var(--highlight-color);
-  color: var(--main-text);
+  background-color: var(--primary-bg-dark);
+  color: var(--hover);
   width: 10rem;
   height: 2.2rem;
   margin: 0.5rem 0.5rem 1.5rem;
@@ -309,8 +316,7 @@ body {
 }
 
 .launch-project:hover {
-  background-color: var(--main-text);
-  color: var(--highlight-color);
+  transform: scale(1.06);
 }
 
 footer {
