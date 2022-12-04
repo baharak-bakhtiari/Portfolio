@@ -162,7 +162,7 @@ body {
 /*about page*/
 
 .about-me {
-  height: 90vh;
+  height: 100vh;
   background-color: var(--hover);
   padding: 3rem 5rem;
 }
@@ -319,6 +319,27 @@ body {
   transform: scale(1.06);
 }
 
+/*contact me*/
+
+.contact-page{
+  height: 100vh;
+}
+
+.svgcolor-dark {
+  fill: var(--hover);
+  stroke: var(--main-text);
+}
+
+.contact-container {
+  background-color: var(--primary-bg);
+  margin:5rem 10rem;
+  padding: 2.5rem;
+}
+
+/*end of contact me*/
+
+/*footer*/ 
+
 footer {
   text-align: center;
   color: var(--highlight-color);
@@ -327,6 +348,8 @@ footer {
 footer a {
   color: var(--main-text);
 }
+
+/*end of footer*/ 
 
 /*Responsivness*/
 
