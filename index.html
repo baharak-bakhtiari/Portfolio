@@ -37,7 +37,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#home">
           <img src="/images/bb-logo.png" alt="my logo" class="logo img-fluid" />
         </a>
         <button
@@ -61,11 +61,13 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-            <a class="nav-link" href="#">Skills</a>
-            <a class="nav-link" href="#">Certificates</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active" aria-current="page" href="#about"
+              >About</a
+            >
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#certificates">Certificates</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -75,7 +77,7 @@
 
     <!--home page-->
 
-    <div class="home-page">
+    <div class="home-page" id="home">
       <div class="home-container d-lg-flex flex-row justify-content-between">
         <div class="home-content">
           <h1>Baharak Bakhtiari</h1>
@@ -103,7 +105,7 @@
 
     <!--about me-->
 
-    <div class="about-me">
+    <div class="about-me" id="about">
       <h3 class="section-title text-center"><span>who</span> am I</h3>
       <div class="about-gist">
         My name is Baharak Bakhtiari. I am 22 years old, I live in Hamedan,
@@ -141,7 +143,7 @@
 
     <!--work page-->
 
-    <div class="work-page">
+    <div class="work-page" id="projects">
       <h3 class="section-title text-center">
         my&nbsp;&nbsp;<span>projects</span>
       </h3>
@@ -163,7 +165,13 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor
             sit amet consectetur adipisicing.
           </p>
-          <button class="launch-project rounded-pill">launch project</button>
+          <a
+            href="https://coffeeshop-the-little-spring.netlify.app"
+            class="launch-project rounded-pill text-center"
+            target="_blank"
+            title="coffeeshop-website"
+            >launch project</a
+          >
         </div>
         <div class="project-item d-flex flex-column justify-content-center">
           <div class="project-image">
@@ -179,7 +187,13 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor
             sit amet consectetur adipisicing.
           </p>
-          <button class="launch-project rounded-pill">launch project</button>
+          <a
+            href="https://weather-app-the-little-spring.netlify.app"
+            class="launch-project rounded-pill text-center"
+            target="_blank"
+            title="weather-app"
+            >launch project</a
+          >
         </div>
         <div class="project-item d-flex flex-column justify-content-center">
           <div class="project-image">
@@ -195,7 +209,12 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
             dolor sit amet consectetur adipisicing.
           </p>
-          <button class="launch-project rounded-pill">launch project</button>
+          <a
+            class="launch-project rounded-pill text-center"
+            target="_blank"
+            title="resturant-website"
+            >launch project</a
+          >
         </div>
       </div>
     </div>
@@ -204,7 +223,7 @@
 
     <!--contant page-->
 
-    <div class="contact-page">
+    <div class="contact-page" id="contact">
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 100 102"
@@ -217,26 +236,30 @@
         <path d="M0 0 L50 100 L100 0 Z"></path>
       </svg>
       <div class="contact-container row">
-        <div class="text-section col-6">
-          <h3 class="mb-4">Let's Connect!</h3>
+        <div class="text-section col-lg-6 col-md-6 col-sm-12">
+          <h3 class="connect-title mb-4">Let's <span>Connect!</span></h3>
           <div class="connection-info">
             <div class="mb-2">
               <i
-                class="fa-solid fa-mobile-screen-button fa-border phone-icon"
+                class="fa-solid fa-mobile-screen-button fa-border phone-icon rounded-pill"
               ></i>
-              <a href="tel:+989180184671" class="d-inline ms-2"
+              <a href="tel:+989180184671" class="d-inline ms-2 phone-number"
                 >+98 918 018 4671</a
               >
             </div>
             <div>
-              <i class="fa-regular fa-envelope fa-border"></i>
-              <a href="mailto:baharakbakhtiyari@gmail.com" class="d-inline ms-2"
+              <i
+                class="fa-regular fa-envelope fa-border mail-icon rounded-pill"
+              ></i>
+              <a
+                href="mailto:baharakbakhtiyari@gmail.com"
+                class="d-inline ms-2 email-address"
                 >baharakbakhtiyari@gmail.com</a
               >
             </div>
           </div>
         </div>
-        <div class="form-section col-6">
+        <div class="form-section col-lg-6 col-md-6 col-sm-12">
           <form
             class="contact-form"
             autocomplete="off"
@@ -273,7 +296,11 @@
                 required
               ></textarea>
             </div>
-            <button type="submit" id="my-form-button" class="btn-branding">
+            <button
+              type="submit"
+              id="my-form-button"
+              class="btn-branding rounded-pill"
+            >
               Contact me
             </button>
             <p id="my-form-status" class="mt-2"></p>
@@ -284,7 +311,10 @@
         <div class="social-medias"></div>
         <p>
           coded by
-          <a href="https://github.com/The-little-spring/Portfolio"
+          <a
+            href="https://github.com/The-little-spring/Portfolio"
+            target="_blank"
+            title="github"
             >Baharak Bakhtiari</a
           >
         </p>

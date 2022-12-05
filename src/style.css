@@ -76,7 +76,7 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--highlight-color);
+  color: rgb(68, 143, 127);
   border-bottom: 0.07rem solid var(--highlight-color);
   padding-bottom: 0.3rem;
 }
@@ -90,7 +90,7 @@ body {
 /*home page*/
 
 .home-page {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .home-container {
@@ -162,7 +162,7 @@ body {
 /*about page*/
 
 .about-me {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--hover);
   padding: 3rem 5rem;
 }
@@ -240,11 +240,12 @@ body {
 
 .work-page {
   background-color: var(--hover);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .projects-container {
-  margin: 2.5rem 5rem;
+  margin: 2.5rem 5rem 0;
+  padding-bottom: 2.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
@@ -313,16 +314,18 @@ body {
   font-weight: 600;
   transition: transform 0.3s ease-in;
   align-self: center;
+  text-decoration: none;
 }
 
 .launch-project:hover {
   transform: scale(1.06);
+  color: var(--hover);
 }
 
 /*contact me*/
 
-.contact-page{
-  height: 100vh;
+.contact-page {
+  min-height: 100vh;
 }
 
 .svgcolor-dark {
@@ -332,13 +335,72 @@ body {
 
 .contact-container {
   background-color: var(--primary-bg);
-  margin:5rem 10rem;
+  margin: 5rem 7rem;
   padding: 2.5rem;
+}
+
+.connect-title {
+  font-weight: 700;
+  color: var(--highlight-color);
+  font-size: 3rem;
+}
+
+.connect-title span {
+  color: var(--main-text);
+}
+
+.connection-info i {
+  border: none;
+  color: var(--main-text);
+  background-color: var(--primary-bg-dark);
+  font-size: 1.5rem;
+}
+
+.phone-icon {
+  padding: 0.5rem 0.7rem;
+}
+
+.mail-icon {
+  padding: 0.5rem 0.5rem;
+}
+
+.phone-number,
+.email-address {
+  color: var(--main-text);
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+
+form {
+  max-width: 520px;
+  padding: 2rem 1rem;
+}
+
+.form-control {
+  background-color: var(--main-bg);
+  border: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: var(--main-bg);
+  border: var(--border-gray);
+  color: var(--highlight-color);
+  box-shadow: none;
+}
+
+.contact-form button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--main-text);
+  color: var(--highlight-color);
 }
 
 /*end of contact me*/
 
-/*footer*/ 
+/*footer*/
 
 footer {
   text-align: center;
@@ -349,7 +411,7 @@ footer a {
   color: var(--main-text);
 }
 
-/*end of footer*/ 
+/*end of footer*/
 
 /*Responsivness*/
 
@@ -388,6 +450,12 @@ footer a {
   .home-content {
     text-align: center;
     margin: auto;
+  }
+
+  .contact-container {
+    background-color: var(--primary-bg);
+    margin: 5rem 3rem;
+    padding: 2rem;
   }
 }
 
