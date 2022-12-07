@@ -339,6 +339,10 @@ body {
   padding: 2.5rem;
 }
 
+.text-section {
+  align-self: center;
+}
+
 .connect-title {
   font-weight: 700;
   color: var(--highlight-color);
@@ -380,22 +384,41 @@ form {
 .form-control {
   background-color: var(--main-bg);
   border: none;
+  color: var(--hover);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   background-color: var(--main-bg);
   border: var(--border-gray);
-  color: var(--highlight-color);
-  box-shadow: none;
+  color: var(--hover);
+  box-shadow: 2.5px 2.5px #4e4c4c69;
+}
+
+.contact-form input:active,
+.contact-form textarea:active {
+  background-color: var(--main-bg);
+  border: var(--border-gray);
+  color: var(--hover);
+  box-shadow: 2.5px 2.5px #4e4c4c69;
+}
+
+#input-subject {
+  min-height: 8rem;
 }
 
 .contact-form button {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  padding: 0.5rem;
+  width: 80%;
+  font-size: 1.3rem;
   background-color: var(--main-text);
   color: var(--highlight-color);
+}
+
+.contact-form button:hover {
+  width: 100%;
 }
 
 /*end of contact me*/
@@ -404,11 +427,25 @@ form {
 
 footer {
   text-align: center;
-  color: var(--highlight-color);
 }
 
-footer a {
+.social-medias {
+  gap: 1rem;
+}
+
+.social-medias .social-icon {
+  font-size: 2rem;
+  color: var(--primary-bg-dark);
+  margin-bottom: 1rem;
+}
+
+.social-medias .social-icon:hover {
   color: var(--main-text);
+}
+
+.developer {
+  color: var(--primary-bg-dark);
+  text-decoration: none;
 }
 
 /*end of footer*/
