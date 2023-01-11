@@ -14,7 +14,7 @@
   --primary-bg: #e2dcc80c;
   --primary-bg-dark: #2c2c2a;
   --main-text: rgb(13, 105, 85);
-  --highlight-color: #eedda5;
+  --highlight-color: rgb(238, 221, 165);
   --hover: #e2dcc8;
   --border: 0.12rem solid #eedda5;
   --border-gray: 0.12rem solid #2c2c2a;
@@ -237,6 +237,44 @@ body {
 /*end of about page*/
 
 /*slills page*/
+
+.skills-page {
+  background-color: var(--main-bg);
+  min-height: 100vh;
+}
+
+.skill-item {
+  border: none;
+  border-radius: 10px;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg-dark);
+  border-radius: 10px;
+}
+
+.skill-icon img {
+  color: var(--highlight-color);
+  width: 4rem;
+}
+
+.skill-icon i {
+  margin-top: 40px;
+  color: var(--highlight-color);
+  font-size: 4rem;
+}
+
+.skill-icon p {
+  margin-top: 8px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--highlight-color);
+}
 
 /*end of skills page*/
 
