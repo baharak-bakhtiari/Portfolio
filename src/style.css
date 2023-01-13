@@ -278,6 +278,27 @@ body {
 
 /*end of skills page*/
 
+/*certificate page*/
+
+.certificate-page {
+  background-color: var(--main-bg);
+  min-height: 100vh;
+}
+
+.certificate-item {
+  border: none;
+  border-radius: 10px;
+}
+
+.certificate-pic img {
+  margin-top: 40px;
+  color: var(--highlight-color);
+  width: 25rem;
+  border-radius: 10px;
+}
+
+/*end of certificate page*/
+
 /*work page*/
 
 .work-page {
