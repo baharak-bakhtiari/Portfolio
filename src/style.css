@@ -257,7 +257,7 @@ body {
   border-radius: 10px;
 }
 
-.skill-icon img {
+.vscode {
   color: var(--highlight-color);
   width: 4rem;
 }
