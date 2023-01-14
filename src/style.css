@@ -167,15 +167,25 @@ body {
   padding: 3rem 5rem;
 }
 
-.section-title {
+.section-title-light {
+  color: var(--highlight-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
+
+.section-title-dark {
   color: var(--main-bg);
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: capitalize;
+  margin: 2rem 0;
 }
 
-.section-title span {
-  color: var(--main-bg);
+.section-title-light span,
+.section-title-dark span {
+  color: var(--main-text);
 }
 
 .about-gist {
@@ -240,7 +250,8 @@ body {
 
 .skills-page {
   background-color: var(--main-bg);
-  min-height: 100vh;
+  min-height: 80vh;
+  padding: 2rem 5rem;
 }
 
 .skill-item {
@@ -283,6 +294,7 @@ body {
 .certificate-page {
   background-color: var(--main-bg);
   min-height: 100vh;
+  padding: 0 5rem 5rem;
 }
 
 .certificate-item {
@@ -290,11 +302,56 @@ body {
   border-radius: 10px;
 }
 
-.certificate-pic img {
+.certificate-pic {
+  position: relative;
   margin-top: 40px;
-  color: var(--highlight-color);
-  width: 29rem;
+}
+
+.certificate-pic img {
   border-radius: 10px;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.certificate-pic:hover img {
+  opacity: 0.2;
+}
+
+.certificate-pic:hover .middle-button {
+  opacity: 1;
+}
+
+.middle-button {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.view-certificate {
+  background-color: var(--main-text);
+  color: var(--highlight-color);
+  padding: 8px 16px;
+  display: block;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.view-certificate:hover {
+  text-decoration: none;
+  color: var(--highlight-color);
+  transform: scale(1.05);
 }
 
 /*end of certificate page*/
@@ -515,6 +572,13 @@ footer {
 
 /*Responsivness*/
 
+@media (max-width: 1150px) {
+  .certificate-pic img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 95%;
@@ -559,13 +623,29 @@ footer {
   }
 
   .certificate-pic img {
-    width: 24rem;
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media (max-width: 768px) {
   html {
     font-size: 85%;
+  }
+  .certificate-pic img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #git {
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificate-pic img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -598,6 +678,7 @@ footer {
   }
 
   .certificate-pic img {
-    width: 30rem;
+    width: 100%;
+    height: 100%;
   }
 }
