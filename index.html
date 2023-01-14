@@ -89,7 +89,7 @@
             A professional & imaginative front-end developer from&nbspIran.
             Loves to add clarity to complicated concepts.
           </div>
-          <button class="rounded-pill">contact me</button>
+          <a href="#contact" class="rounded-pill">contact me</a>
         </div>
         <div class="my-photo">
           <img
@@ -133,7 +133,9 @@
             <button class="my-resume rounded-pill">
               <i class="fa-solid fa-download"></i> my resume
             </button>
-            <button class="my-projects rounded-pill">my projects</button>
+            <button class="my-projects rounded-pill">
+              <a href="#projects" id="my-work">my projects</a>
+            </button>
           </div>
         </div>
       </div>
@@ -143,7 +145,7 @@
 
     <!--skills page-->
 
-    <div class="skills-page">
+    <div class="skills-page" id="skills">
       <h3 class="section-title-light text-center mb-10">
         my&nbsp;&nbsp;<span>skills</span>
       </h3>
@@ -214,7 +216,7 @@
 
     <!--certificate page-->
 
-    <div class="certificate-page">
+    <div class="certificate-page" id="certificates">
       <h3 class="section-title-light text-center">
         my&nbsp;&nbsp;<span>certificates</span>
       </h3>
@@ -229,8 +231,9 @@
               <img src="/images/certificates/Coursera.jpg" />
               <div class="middle-button">
                 <a
-                  href="https://coffeeshop-the-little-spring.netlify.app"
+                  href="https://www.coursera.org/account/accomplishments/verify/GM2TFM9HQ87F"
                   class="view-certificate"
+                  target="_blank"
                   >view certificate</a
                 >
               </div>
@@ -245,8 +248,9 @@
               <img src="/images/certificates/plus.png" />
               <div class="middle-button">
                 <a
-                  href="https://coffeeshop-the-little-spring.netlify.app"
+                  href="https://www.shecodes.io/certificates/1b9924ce014cb8141d620bda238158f0"
                   class="view-certificate"
+                  target="_blank"
                   >view certificate</a
                 >
               </div>
@@ -261,8 +265,9 @@
               <img src="/images/certificates/responsive.png" />
               <div class="middle-button">
                 <a
-                  href="https://coffeeshop-the-little-spring.netlify.app"
+                  href="https://www.shecodes.io/certificates/c54dcd1345198b1bb495a4c2c4596b6d"
                   class="view-certificate"
+                  target="_blank"
                   >view certificate</a
                 >
               </div>
@@ -277,8 +282,9 @@
               <img src="/images/certificates/react.png" />
               <div class="middle-button">
                 <a
-                  href="https://coffeeshop-the-little-spring.netlify.app"
+                  href="https://www.shecodes.io/certificates/1c4e944ba687496bb1b23940437d2830"
                   class="view-certificate"
+                  target="_blank"
                   >view certificate</a
                 >
               </div>
@@ -297,6 +303,28 @@
         my&nbsp;&nbsp;<span>projects</span>
       </h3>
       <div class="projects-container">
+        <div class="project-item d-flex flex-column justify-content-center">
+          <div class="project-image">
+            <img src="images/projects/resturant.jpg" alt="coffeeshop-website" />
+          </div>
+          <p class="project-name">Resturant Website</p>
+          <div class="project-technologies d-flex justify-content-between">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
+            dolor sit amet consectetur adipisicing.
+          </p>
+          <a
+            href="https://chinese-restaurant-the-little-spring.netlify.app"
+            class="launch-project rounded-pill text-center"
+            target="_blank"
+            title="resturant-website"
+            >launch project</a
+          >
+        </div>
         <div class="project-item d-flex flex-column justify-content-center">
           <div class="project-image">
             <img
@@ -327,41 +355,24 @@
             <img src="images/projects/weather.jpg" alt="coffeeshop-website" />
           </div>
           <p class="project-name">Weather App</p>
-          <div class="project-technologies d-flex justify-content-between">
+          <div
+            class="project-technologies weather d-flex justify-content-between"
+          >
             <i class="fa-brands fa-html5"></i>
             <i class="fa-brands fa-css3-alt"></i>
             <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-bootstrap"></i>
           </div>
           <p class="project-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor
             sit amet consectetur adipisicing.
           </p>
           <a
-            href="https://weather-app-the-little-spring.netlify.app"
+            href="https://weatherapp-react-the-little-spring.netlify.app"
             class="launch-project rounded-pill text-center"
             target="_blank"
             title="weather-app"
-            >launch project</a
-          >
-        </div>
-        <div class="project-item d-flex flex-column justify-content-center">
-          <div class="project-image">
-            <img src="images/projects/resturant.jpg" alt="coffeeshop-website" />
-          </div>
-          <p class="project-name">Resturant Website</p>
-          <div class="project-technologies d-flex justify-content-between">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-square-js"></i>
-          </div>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
-            dolor sit amet consectetur adipisicing.
-          </p>
-          <a
-            class="launch-project rounded-pill text-center"
-            target="_blank"
-            title="resturant-website"
             >launch project</a
           >
         </div>
@@ -382,7 +393,7 @@
         xmlns="http://www.w3.org/2000/svg"
         class="svgcolor-dark"
       >
-        <path d="M0 0 L50 100 L100 0 Z"></path>
+        <path d="M0 0 L50 100 L100 0"></path>
       </svg>
       <div class="contact-container row">
         <div class="text-section col-lg-6 col-md-6 col-sm-12">
@@ -415,6 +426,7 @@
             id="my-form"
             action="https://formspree.io/f/xzbwnpqd"
             method="post"
+            target="_blank"
           >
             <div class="mb-2">
               <input

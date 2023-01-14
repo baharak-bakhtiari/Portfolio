@@ -76,7 +76,7 @@ body {
 }
 
 .nav-link:hover {
-  color: rgb(68, 143, 127);
+  color: var(--highlight-color);
   border-bottom: 0.07rem solid var(--highlight-color);
   padding-bottom: 0.3rem;
 }
@@ -133,16 +133,17 @@ body {
   margin-bottom: 1.35rem;
 }
 
-.home-content button {
+.home-content a {
   background-color: var(--main-text);
   color: var(--highlight-color);
   padding: 0.5rem 1.5rem;
   font-size: 1.3rem;
   font-weight: 600;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
-.home-content button:hover {
+.home-content a:hover {
   color: var(--main-text);
   background-color: var(--highlight-color);
 }
@@ -237,11 +238,17 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   margin: 2rem 0 1rem 1rem;
+  text-decoration: none;
 }
 
 .my-resume:hover,
 .my-projects:hover {
   transform: scale(1.05);
+}
+
+#my-work {
+  text-decoration: none;
+  color: var(--highlight-color);
 }
 
 /*end of about page*/
@@ -412,6 +419,10 @@ body {
   align-self: center;
 }
 
+.weather {
+  width: 60%;
+}
+
 .project-technologies i {
   color: var(--primary-bg-dark);
   font-size: 2rem;
@@ -496,6 +507,12 @@ body {
   font-size: 1.2rem;
 }
 
+.phone-number:hover,
+.email-address:hover {
+  text-decoration: underline;
+  color: var(--main-text);
+}
+
 form {
   max-width: 520px;
   padding: 2rem 1rem;
@@ -510,9 +527,9 @@ form {
 .contact-form input:focus,
 .contact-form textarea:focus {
   background-color: var(--main-bg);
-  border: var(--border-gray);
+  border: var(--border);
   color: var(--hover);
-  box-shadow: 2.5px 2.5px #4e4c4c69;
+  box-shadow: none;
 }
 
 .contact-form input:active,
@@ -604,6 +621,11 @@ footer {
     display: block;
     font-size: 1.3rem;
     margin-left: 2rem;
+  }
+
+  .nav-link:hover {
+    color: var(--primary-bg-dark);
+    border-bottom: none;
   }
 
   .home-page {
