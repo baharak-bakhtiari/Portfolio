@@ -293,7 +293,7 @@ body {
 .certificate-pic img {
   margin-top: 40px;
   color: var(--highlight-color);
-  width: 25rem;
+  width: 29rem;
   border-radius: 10px;
 }
 
@@ -557,6 +557,10 @@ footer {
     margin: 5rem 3rem;
     padding: 2rem;
   }
+
+  .certificate-pic img {
+    width: 24rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -591,5 +595,9 @@ footer {
   .home-content .description {
     font-size: 1.2rem;
     line-height: 1.5rem;
+  }
+
+  .certificate-pic img {
+    width: 30rem;
   }
 }
