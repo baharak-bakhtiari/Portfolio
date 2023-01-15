@@ -85,6 +85,11 @@ body {
   font-size: 1.8rem;
   cursor: pointer;
   color: var(--main-text);
+  border-color: var(--highlight-color);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 /*home page*/
@@ -217,6 +222,7 @@ body {
 
 .about-picture img {
   width: 30rem;
+  margin: 1rem 0;
 }
 
 .about-content {
@@ -674,6 +680,11 @@ footer {
   .certificate-pic img {
     width: 100%;
     height: 100%;
+  }
+
+  .about-container {
+    justify-content: center;
+    padding: 0;
   }
 }
 
