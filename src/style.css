@@ -10,7 +10,7 @@
 }
 
 :root {
-  --main-bg: #1a1818;
+  --main-bg: rgb(26, 24, 24);
   --primary-bg: #e2dcc80c;
   --primary-bg-dark: #2c2c2a;
   --main-text: rgb(13, 105, 85);
@@ -95,7 +95,7 @@ body {
 
 .home-container {
   background-color: var(--primary-bg);
-  height: 33.25rem;
+  height: fit-content;
   margin: 11rem 5rem 5rem;
 }
 
@@ -148,8 +148,19 @@ body {
   background-color: var(--highlight-color);
 }
 
+.my-profile {
+  background: none;
+  margin: 1rem;
+}
+
+.my-profile img {
+  max-width: 12rem;
+  background-color: var(--main-bg);
+  border: var(--border);
+}
+
 .my-photo {
-  margin: 3.5rem 3rem 3.5rem 0;
+  margin: 3.5rem 3rem 0 0;
   display: flex;
   align-items: flex-start;
   height: fit-content;
@@ -628,11 +639,6 @@ footer {
     border-bottom: none;
   }
 
-  .home-page {
-    align-items: center;
-    max-height: 30rem;
-  }
-
   .home-content {
     text-align: center;
     margin: auto;
@@ -677,12 +683,12 @@ footer {
   }
 
   .home-page {
-    align-items: center;
-    max-height: 25rem;
+    min-height: min-content;
   }
 
   .home-content {
     max-width: 25rem;
+    min-height: fit-content;
   }
 
   .home-content h1 {
