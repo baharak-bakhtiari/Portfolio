@@ -247,6 +247,12 @@ body {
   text-transform: capitalize;
 }
 
+.my-resume a {
+  text-transform: capitalize;
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
 .my-projects {
   background-color: var(--main-text);
   color: var(--highlight-color);
