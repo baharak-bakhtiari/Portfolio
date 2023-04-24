@@ -213,13 +213,6 @@ body {
   text-align: center;
 }
 
-.about-container {
-  background-color: var(--primary-bg);
-  margin: 0;
-  padding: 3rem 0 0;
-  line-height: 2rem;
-}
-
 .about-picture img {
   width: 30rem;
   margin: 1rem 0;
@@ -228,7 +221,10 @@ body {
 .about-content {
   color: var(--primary-bg-dark);
   font-size: 1.5rem;
-  text-align: justify;
+}
+
+.about-content p {
+  width: 80%;
 }
 
 .quote {
