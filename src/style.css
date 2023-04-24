@@ -208,14 +208,9 @@ body {
 .about-gist {
   color: var(--primary-bg-dark);
   font-size: 1.5rem;
-  width: 45%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
-}
-
-.about-picture img {
-  width: 30rem;
-  margin: 1rem 0;
 }
 
 .about-content {
@@ -224,7 +219,7 @@ body {
 }
 
 .about-content p {
-  width: 80%;
+  width: 90%;
 }
 
 .quote {
