@@ -388,8 +388,8 @@ body {
   margin: 2.5rem 5rem 0;
   padding-bottom: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-column-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-column-gap: 2.5rem;
   grid-row-gap: 2rem;
   background-color: transparent;
 }
