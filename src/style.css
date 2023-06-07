@@ -179,7 +179,7 @@ body {
 /*about page*/
 
 .about-me {
-  min-height: 80vh;
+  min-height: fit-content;
   background-color: var(--hover);
   padding: 1rem 5rem;
 }
@@ -457,7 +457,7 @@ body {
 /*contact me*/
 
 .contact-page {
-  min-height: 100vh;
+  min-height: fit-content;
 }
 
 .svgcolor-dark {
