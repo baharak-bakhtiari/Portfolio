@@ -179,9 +179,9 @@ body {
 /*about page*/
 
 .about-me {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: var(--hover);
-  padding: 3rem 5rem;
+  padding: 1rem 5rem;
 }
 
 .section-title-light {
@@ -205,27 +205,13 @@ body {
   color: var(--main-text);
 }
 
-.about-gist {
-  color: var(--primary-bg-dark);
-  font-size: 1.5rem;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .about-content {
   color: var(--primary-bg-dark);
   font-size: 1.5rem;
 }
 
 .about-content p {
-  width: 90%;
-}
-
-.quote {
-  color: var(--main-text);
-  font-size: 1.6rem;
-  font-weight: 600;
+  width: 70%;
 }
 
 .my-resume {
